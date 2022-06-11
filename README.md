@@ -1,3 +1,1 @@
 # RidingMate-iOS
-
-## Member
