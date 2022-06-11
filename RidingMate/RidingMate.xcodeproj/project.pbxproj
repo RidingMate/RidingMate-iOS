@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3247B728548833000D9826 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3247B628548833000D9826 /* MainTabBarController.swift */; };
+		0E8356CB2854905A00BBF06A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356CA2854905900BBF06A /* SplashViewController.swift */; };
+		0E8356CE2854A56700BBF06A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356CD2854A56700BBF06A /* HomeViewController.swift */; };
+		0E8356D12854A5BF00BBF06A /* BikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356D02854A5BF00BBF06A /* BikeViewController.swift */; };
+		0E8356D42854A65400BBF06A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356D32854A65400BBF06A /* RegisterViewController.swift */; };
+		0E8356D72854A66700BBF06A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356D62854A66700BBF06A /* StoreViewController.swift */; };
+		0E8356DA2854A67900BBF06A /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356D92854A67900BBF06A /* MyViewController.swift */; };
 		0EB01E2C28547FD900E20DCA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E2B28547FD900E20DCA /* SnapKit */; };
 		0EB01E2F28547FF200E20DCA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E2E28547FF200E20DCA /* Alamofire */; };
-		0EB01E322854809600E20DCA /* swiftlint in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E312854809600E20DCA /* swiftlint */; };
 		0EB01E35285480AD00E20DCA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E34285480AD00E20DCA /* Kingfisher */; };
 		0EB01E38285480D500E20DCA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E37285480D500E20DCA /* RxCocoa */; };
 		0EB01E3A285480D600E20DCA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E39285480D500E20DCA /* RxRelay */; };
@@ -41,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3247B628548833000D9826 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0E8356CA2854905900BBF06A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0E8356CD2854A56700BBF06A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0E8356D02854A5BF00BBF06A /* BikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeViewController.swift; sourceTree = "<group>"; };
+		0E8356D32854A65400BBF06A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0E8356D62854A66700BBF06A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		0E8356D92854A67900BBF06A /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		0FE7E29928547BC9008084E3 /* RidingMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RidingMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE7E29C28547BC9008084E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE7E29E28547BC9008084E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +76,6 @@
 				0EB01E35285480AD00E20DCA /* Kingfisher in Frameworks */,
 				0EB01E2C28547FD900E20DCA /* SnapKit in Frameworks */,
 				0EB01E38285480D500E20DCA /* RxCocoa in Frameworks */,
-				0EB01E322854809600E20DCA /* swiftlint in Frameworks */,
 				0EB01E2F28547FF200E20DCA /* Alamofire in Frameworks */,
 				0EB01E3C285480D600E20DCA /* RxSwift in Frameworks */,
 			);
@@ -86,6 +98,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E8356C92854904C00BBF06A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356CA2854905900BBF06A /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0E8356CC2854988100BBF06A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356CD2854A56700BBF06A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E8356CF2854A59C00BBF06A /* Bike */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356D02854A5BF00BBF06A /* BikeViewController.swift */,
+			);
+			path = Bike;
+			sourceTree = "<group>";
+		};
+		0E8356D22854A5C400BBF06A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356D32854A65400BBF06A /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		0E8356D52854A65700BBF06A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356D62854A66700BBF06A /* StoreViewController.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		0E8356D82854A66C00BBF06A /* My */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356D92854A67900BBF06A /* MyViewController.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
 		0FE7E29028547BC9008084E3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +171,13 @@
 			children = (
 				0FE7E29C28547BC9008084E3 /* AppDelegate.swift */,
 				0FE7E29E28547BC9008084E3 /* SceneDelegate.swift */,
+				0E3247B628548833000D9826 /* MainTabBarController.swift */,
+				0E8356C92854904C00BBF06A /* Splash */,
+				0E8356CC2854988100BBF06A /* Home */,
+				0E8356CF2854A59C00BBF06A /* Bike */,
+				0E8356D22854A5C400BBF06A /* Register */,
+				0E8356D52854A65700BBF06A /* Store */,
+				0E8356D82854A66C00BBF06A /* My */,
 				0FE7E2A528547BCA008084E3 /* Assets.xcassets */,
 				0FE7E2A728547BCA008084E3 /* LaunchScreen.storyboard */,
 				0FE7E2AA28547BCA008084E3 /* Info.plist */,
@@ -154,7 +221,6 @@
 			packageProductDependencies = (
 				0EB01E2B28547FD900E20DCA /* SnapKit */,
 				0EB01E2E28547FF200E20DCA /* Alamofire */,
-				0EB01E312854809600E20DCA /* swiftlint */,
 				0EB01E34285480AD00E20DCA /* Kingfisher */,
 				0EB01E37285480D500E20DCA /* RxCocoa */,
 				0EB01E39285480D500E20DCA /* RxRelay */,
@@ -235,7 +301,6 @@
 			packageReferences = (
 				0EB01E2A28547FD900E20DCA /* XCRemoteSwiftPackageReference "SnapKit" */,
 				0EB01E2D28547FF200E20DCA /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0EB01E302854809600E20DCA /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				0EB01E33285480AD00E20DCA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				0EB01E36285480D500E20DCA /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
@@ -281,8 +346,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8356D72854A66700BBF06A /* StoreViewController.swift in Sources */,
+				0E8356CE2854A56700BBF06A /* HomeViewController.swift in Sources */,
 				0FE7E29D28547BC9008084E3 /* AppDelegate.swift in Sources */,
+				0E8356D42854A65400BBF06A /* RegisterViewController.swift in Sources */,
+				0E8356DA2854A67900BBF06A /* MyViewController.swift in Sources */,
 				0FE7E29F28547BC9008084E3 /* SceneDelegate.swift in Sources */,
+				0E8356D12854A5BF00BBF06A /* BikeViewController.swift in Sources */,
+				0E3247B728548833000D9826 /* MainTabBarController.swift in Sources */,
+				0E8356CB2854905A00BBF06A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +459,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -440,6 +513,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -634,14 +708,6 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		0EB01E302854809600E20DCA /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.2;
-			};
-		};
 		0EB01E33285480AD00E20DCA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -670,11 +736,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0EB01E2D28547FF200E20DCA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		0EB01E312854809600E20DCA /* swiftlint */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0EB01E302854809600E20DCA /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = swiftlint;
 		};
 		0EB01E34285480AD00E20DCA /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
