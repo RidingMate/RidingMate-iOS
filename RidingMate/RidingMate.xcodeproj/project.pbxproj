@@ -22,6 +22,11 @@
 		0EB01E38285480D500E20DCA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E37285480D500E20DCA /* RxCocoa */; };
 		0EB01E3A285480D600E20DCA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E39285480D500E20DCA /* RxRelay */; };
 		0EB01E3C285480D600E20DCA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E3B285480D600E20DCA /* RxSwift */; };
+		0F91FC8A2858E1CE00AA51CE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC892858E1CE00AA51CE /* UIColor.swift */; };
+		0F91FC8C2858E2E900AA51CE /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC8B2858E2E900AA51CE /* UIFont.swift */; };
+		0F91FC8F2858E42A00AA51CE /* SplashLogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC8E2858E42A00AA51CE /* SplashLogoImageView.swift */; };
+		0F91FC942858EE9200AA51CE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC932858EE9200AA51CE /* SplashViewModel.swift */; };
+		0F91FC962858F4ED00AA51CE /* LogInSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC952858F4ED00AA51CE /* LogInSignInButton.swift */; };
 		0FE7E29D28547BC9008084E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7E29C28547BC9008084E3 /* AppDelegate.swift */; };
 		0FE7E29F28547BC9008084E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7E29E28547BC9008084E3 /* SceneDelegate.swift */; };
 		0FE7E2A628547BCA008084E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE7E2A528547BCA008084E3 /* Assets.xcassets */; };
@@ -58,6 +63,11 @@
 		0E8356D32854A65400BBF06A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0E8356D62854A66700BBF06A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		0E8356D92854A67900BBF06A /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		0F91FC892858E1CE00AA51CE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		0F91FC8B2858E2E900AA51CE /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		0F91FC8E2858E42A00AA51CE /* SplashLogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLogoImageView.swift; sourceTree = "<group>"; };
+		0F91FC932858EE9200AA51CE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		0F91FC952858F4ED00AA51CE /* LogInSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignInButton.swift; sourceTree = "<group>"; };
 		0FE7E29928547BC9008084E3 /* RidingMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RidingMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE7E29C28547BC9008084E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE7E29E28547BC9008084E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +124,9 @@
 		0E8356C92854904C00BBF06A /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				0E8356CA2854905900BBF06A /* SplashViewController.swift */,
+				0F91FC912858E70800AA51CE /* ViewModel */,
+				0F91FC8D2858E42100AA51CE /* View */,
+				0F91FC902858E6F700AA51CE /* Controller */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -159,6 +171,40 @@
 			path = My;
 			sourceTree = "<group>";
 		};
+		0F91FC882858E1B300AA51CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F91FC892858E1CE00AA51CE /* UIColor.swift */,
+				0F91FC8B2858E2E900AA51CE /* UIFont.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0F91FC8D2858E42100AA51CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F91FC8E2858E42A00AA51CE /* SplashLogoImageView.swift */,
+				0F91FC952858F4ED00AA51CE /* LogInSignInButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F91FC902858E6F700AA51CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356CA2854905900BBF06A /* SplashViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F91FC912858E70800AA51CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F91FC932858EE9200AA51CE /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0FE7E29028547BC9008084E3 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +238,7 @@
 				0E8356D22854A5C400BBF06A /* Register */,
 				0E8356D52854A65700BBF06A /* Store */,
 				0E8356D82854A66C00BBF06A /* My */,
+				0F91FC882858E1B300AA51CE /* Extension */,
 				0FE7E2A528547BCA008084E3 /* Assets.xcassets */,
 				0FE7E2A728547BCA008084E3 /* LaunchScreen.storyboard */,
 				0FE7E2AA28547BCA008084E3 /* Info.plist */,
@@ -360,7 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F91FC942858EE9200AA51CE /* SplashViewModel.swift in Sources */,
 				0E8356D72854A66700BBF06A /* StoreViewController.swift in Sources */,
+				0F91FC8A2858E1CE00AA51CE /* UIColor.swift in Sources */,
 				0E8356CE2854A56700BBF06A /* HomeViewController.swift in Sources */,
 				0FE7E29D28547BC9008084E3 /* AppDelegate.swift in Sources */,
 				0E8356D42854A65400BBF06A /* RegisterViewController.swift in Sources */,
@@ -368,9 +417,12 @@
 				0FE7E29F28547BC9008084E3 /* SceneDelegate.swift in Sources */,
 				0E8356D12854A5BF00BBF06A /* BikeViewController.swift in Sources */,
 				0E3247B728548833000D9826 /* MainTabBarController.swift in Sources */,
+				0F91FC8C2858E2E900AA51CE /* UIFont.swift in Sources */,
+				0F91FC8F2858E42A00AA51CE /* SplashLogoImageView.swift in Sources */,
 				0824A34E285823B3001F694A /* MemberViewController.swift in Sources */,
 				0E8356CB2854905A00BBF06A /* SplashViewController.swift in Sources */,
 				0824A35128582DA8001F694A /* MemberModel.swift in Sources */,
+				0F91FC962858F4ED00AA51CE /* LogInSignInButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3HC733CNK;
+				DEVELOPMENT_TEAM = M6FL2MH4H7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RidingMate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -569,7 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3HC733CNK;
+				DEVELOPMENT_TEAM = M6FL2MH4H7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RidingMate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
