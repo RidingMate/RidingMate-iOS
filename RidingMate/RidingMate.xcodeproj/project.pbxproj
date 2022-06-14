@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0824A34E285823B3001F694A /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824A34D285823B3001F694A /* MemberViewController.swift */; };
+		0824A35128582DA8001F694A /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824A35028582DA8001F694A /* MemberModel.swift */; };
 		0E3247B728548833000D9826 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3247B628548833000D9826 /* MainTabBarController.swift */; };
 		0E8356CB2854905A00BBF06A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356CA2854905900BBF06A /* SplashViewController.swift */; };
 		0E8356CE2854A56700BBF06A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8356CD2854A56700BBF06A /* HomeViewController.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0824A34D285823B3001F694A /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		0824A35028582DA8001F694A /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
 		0E3247B628548833000D9826 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0E8356CA2854905900BBF06A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0E8356CD2854A56700BBF06A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0824A34C2858237C001F694A /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				0824A34D285823B3001F694A /* MemberViewController.swift */,
+				0824A35028582DA8001F694A /* MemberModel.swift */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
 		0E8356C92854904C00BBF06A /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +185,7 @@
 				0FE7E29C28547BC9008084E3 /* AppDelegate.swift */,
 				0FE7E29E28547BC9008084E3 /* SceneDelegate.swift */,
 				0E3247B628548833000D9826 /* MainTabBarController.swift */,
+				0824A34C2858237C001F694A /* Member */,
 				0E8356C92854904C00BBF06A /* Splash */,
 				0E8356CC2854988100BBF06A /* Home */,
 				0E8356CF2854A59C00BBF06A /* Bike */,
@@ -354,7 +368,9 @@
 				0FE7E29F28547BC9008084E3 /* SceneDelegate.swift in Sources */,
 				0E8356D12854A5BF00BBF06A /* BikeViewController.swift in Sources */,
 				0E3247B728548833000D9826 /* MainTabBarController.swift in Sources */,
+				0824A34E285823B3001F694A /* MemberViewController.swift in Sources */,
 				0E8356CB2854905A00BBF06A /* SplashViewController.swift in Sources */,
+				0824A35128582DA8001F694A /* MemberModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M6FL2MH4H7;
+				DEVELOPMENT_TEAM = Q3HC733CNK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RidingMate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -553,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M6FL2MH4H7;
+				DEVELOPMENT_TEAM = Q3HC733CNK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RidingMate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
