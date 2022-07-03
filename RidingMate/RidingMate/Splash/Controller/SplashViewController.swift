@@ -7,17 +7,20 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 import SnapKit
 
 class SplashViewController: UIViewController {
   
   // MARK: - Property
+  private let disposeBag = DisposeBag()
   private let splashImageView = SplashLogoImageView()
   private var viewModel = SplashViewModel()
   
   lazy var loginButton : LogInSignInButton = {
     let button = LogInSignInButton(title: "로그인", titleColor: .blackColor, backColor: .whiteColor)
-    button.addTarget(self, action: #selector(loginBtnTapped), for: .touchUpInside)
+//    button.addTarget(self, action: #selector(loginBtnTapped), for: .touchUpInside)
     button.alpha = 0
     return button
   }()
@@ -26,7 +29,7 @@ class SplashViewController: UIViewController {
     let button = LogInSignInButton(title: "회원가입", titleColor: .whiteColor, backColor: .blackColor)
     button.layer.borderWidth = 2
     button.layer.borderColor = UIColor.whiteColor.cgColor
-    button.addTarget(self, action: #selector(signInBtnTapped), for: .touchUpInside)
+//    button.addTarget(self, action: #selector(signInBtnTapped), for: .touchUpInside)
     button.alpha = 0
     return button
   }()
@@ -36,7 +39,8 @@ class SplashViewController: UIViewController {
     super.viewDidLoad()
     configureUI()
     viewModel.idToken = "" // 로그인 안되어있을때 뷰 테스트
-//        viewModel.idToken = "12345" // 로그인 되어있을때 테스트 뷰 테스트
+    //        viewModel.idToken = "12345" // 로그인 되어있을때 테스트 뷰 테스트
+    bind()
   }
   
   override func viewDidLayoutSubviews() {
@@ -78,18 +82,34 @@ class SplashViewController: UIViewController {
     }
   }
   
+  private func bind() {
+    signInButton.rx.tap
+      .bind {
+        let vc = MemberViewController(memberType: .signin)
+        self.navigationController?.pushViewController(vc, animated: true)
+      }
+      .disposed(by: disposeBag)
+    
+    loginButton.rx.tap
+      .bind {
+        let vc = MemberViewController(memberType: .login)
+        self.navigationController?.pushViewController(vc, animated: true)
+      }
+      .disposed(by: disposeBag)
+  }
+  
   //MARK: - @objc func
-
+  
   @objc private func loginBtnTapped() {
     print("로그인 버튼 클릭됨")
   }
-
+  
   @objc private func signInBtnTapped() {
     print("회원가입 버튼 클릭됨")
   }
 }
 
-  // MARK: - Layout
+// MARK: - Layout
 extension SplashViewController {
   
   private func configureUI() {

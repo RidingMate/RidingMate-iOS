@@ -11,7 +11,7 @@ import UIKit
 class MemberViewController: UIViewController {
   
   // MARK: - Property
-  private var memberTypeCheck: memberType?
+  private var memberTypeCheck: MemberType?
   
   private let titleMainLabel: UILabel = {
     let label = UILabel()
@@ -30,7 +30,7 @@ class MemberViewController: UIViewController {
   }()
   
   // MARK: - init
-  init(memberType: memberType) {
+  init(memberType: MemberType) {
     self.memberTypeCheck = memberType
     super.init(nibName: nil, bundle: nil)
     
@@ -50,24 +50,25 @@ class MemberViewController: UIViewController {
   
   // MARK: - Function
   private func setNavi() {
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.isTranslucent = true
-    self.navigationController?.view.backgroundColor = .clear
-    
-    self.navigationController?.hidesBarsOnSwipe = true
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage = UIImage()
+//    self.navigationController?.navigationBar.isTranslucent = true
+//    self.navigationController?.view.backgroundColor = .clear
+//
+//    self.navigationController?.hidesBarsOnSwipe = true
     
     let imageView = UIImageView(image: UIImage(named: "Back"))
     imageView.frame = CGRect(origin: .zero, size: CGSize(width: 50, height: 50))
     imageView.clipsToBounds = true
     
-    self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: imageView)
+//    self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: imageView)
   }
 }
 
 // MARK: - Layout
 extension MemberViewController {
   private func configureUI() {
+    self.view.backgroundColor = .white
     [titleMainLabel, titleSubLabel].forEach {
       view.addSubview($0)
     }

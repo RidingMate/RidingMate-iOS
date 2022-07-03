@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 struct SplashViewModel {
   
   //MARK: - Property
-  
+  let disposeBag = DisposeBag()
   var idToken : String? // 아이디 토큰
   
   var alreadyLoggedIn : Bool { // 이미 로그인 되어있는지 판별하는 Bool 값
     return idToken != "" && idToken != nil ? true : false
   }
+
 }

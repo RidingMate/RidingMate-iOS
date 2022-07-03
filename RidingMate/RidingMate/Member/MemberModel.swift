@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum memberType: String {
+enum MemberType: String {
   case signin = "SIGN IN"
   case login = "LOGIN"
 }
