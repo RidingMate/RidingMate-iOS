@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "뒤로가기-3.svg",
+      "filename" : "AppleIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "뒤로가기-4.svg",
+      "filename" : "AppleIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "뒤로가기.svg",
+      "filename" : "AppleIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

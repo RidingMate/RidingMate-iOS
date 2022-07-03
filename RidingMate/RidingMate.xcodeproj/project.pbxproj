@@ -34,6 +34,7 @@
 		0FE7E2B428547BCB008084E3 /* RidingMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7E2B328547BCB008084E3 /* RidingMateTests.swift */; };
 		0FE7E2BE28547BCB008084E3 /* RidingMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7E2BD28547BCB008084E3 /* RidingMateUITests.swift */; };
 		0FE7E2C028547BCB008084E3 /* RidingMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7E2BF28547BCB008084E3 /* RidingMateUITestsLaunchTests.swift */; };
+		0FED207F2871CF4C00010337 /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED207E2871CF4C00010337 /* SocialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		0FE7E2B928547BCB008084E3 /* RidingMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidingMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE7E2BD28547BCB008084E3 /* RidingMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingMateUITests.swift; sourceTree = "<group>"; };
 		0FE7E2BF28547BCB008084E3 /* RidingMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FED207E2871CF4C00010337 /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +117,10 @@
 		0824A34C2858237C001F694A /* Member */ = {
 			isa = PBXGroup;
 			children = (
-				0824A34D285823B3001F694A /* MemberViewController.swift */,
-				0824A35028582DA8001F694A /* MemberModel.swift */,
+				0FED207D2871CEC500010337 /* Model */,
+				0FED207C2871CEC300010337 /* View */,
+				0FED207B2871CEBE00010337 /* ViewModel */,
+				0FED207A2871CEBA00010337 /* Controller */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -261,6 +265,37 @@
 				0FE7E2BF28547BCB008084E3 /* RidingMateUITestsLaunchTests.swift */,
 			);
 			path = RidingMateUITests;
+			sourceTree = "<group>";
+		};
+		0FED207A2871CEBA00010337 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0824A34D285823B3001F694A /* MemberViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FED207B2871CEBE00010337 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FED207C2871CEC300010337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FED207E2871CF4C00010337 /* SocialButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FED207D2871CEC500010337 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0824A35028582DA8001F694A /* MemberModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +446,7 @@
 				0E8356D72854A66700BBF06A /* StoreViewController.swift in Sources */,
 				0F91FC8A2858E1CE00AA51CE /* UIColor.swift in Sources */,
 				0E8356CE2854A56700BBF06A /* HomeViewController.swift in Sources */,
+				0FED207F2871CF4C00010337 /* SocialButton.swift in Sources */,
 				0FE7E29D28547BC9008084E3 /* AppDelegate.swift in Sources */,
 				0E8356D42854A65400BBF06A /* RegisterViewController.swift in Sources */,
 				0E8356DA2854A67900BBF06A /* MyViewController.swift in Sources */,
