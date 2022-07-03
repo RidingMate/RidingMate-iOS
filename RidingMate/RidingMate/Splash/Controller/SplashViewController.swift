@@ -20,7 +20,6 @@ class SplashViewController: UIViewController {
   
   lazy var loginButton : LogInSignInButton = {
     let button = LogInSignInButton(title: "로그인", titleColor: .blackColor, backColor: .whiteColor)
-//    button.addTarget(self, action: #selector(loginBtnTapped), for: .touchUpInside)
     button.alpha = 0
     return button
   }()
@@ -29,7 +28,6 @@ class SplashViewController: UIViewController {
     let button = LogInSignInButton(title: "회원가입", titleColor: .whiteColor, backColor: .blackColor)
     button.layer.borderWidth = 2
     button.layer.borderColor = UIColor.whiteColor.cgColor
-//    button.addTarget(self, action: #selector(signInBtnTapped), for: .touchUpInside)
     button.alpha = 0
     return button
   }()
@@ -96,16 +94,6 @@ class SplashViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
       }
       .disposed(by: disposeBag)
-  }
-  
-  //MARK: - @objc func
-  
-  @objc private func loginBtnTapped() {
-    print("로그인 버튼 클릭됨")
-  }
-  
-  @objc private func signInBtnTapped() {
-    print("회원가입 버튼 클릭됨")
   }
 }
 
