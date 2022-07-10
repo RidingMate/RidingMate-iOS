@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import SnapKit
+import Kingfisher
 
 class MyDefaultImageButton: UIButton {
   
-  init(imageString: String?) {
+  init() {
     super.init(frame: .zero)
     
+    backgroundColor = .lightGray
+    layer.cornerRadius = 10
     
   }
   
@@ -19,4 +23,18 @@ class MyDefaultImageButton: UIButton {
     fatalError("init(coder:) has not been implemented")
   }
   
+  //MARK: - Function
+  func settingMyImage(imageString: String?) {
+    if imageString != nil {
+      
+    } else {
+      let bikeIMG = UIImageView(image: UIImage(named: "GrayBike"))
+      self.addSubview(bikeIMG)
+      bikeIMG.snp.makeConstraints {
+        $0.center.equalToSuperview()
+        $0.width.equalTo(50)
+        $0.height.equalTo(30)
+      }
+    }
+  }
 }

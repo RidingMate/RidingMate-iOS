@@ -11,6 +11,7 @@ import UIKit
 class MyViewController: UIViewController {
   
   //MARK: - Property
+  let myBikeImage = MyDefaultImageButton()
   
   //MARK: - Lifecycle
   override func viewDidLoad() {
@@ -26,7 +27,24 @@ class MyViewController: UIViewController {
                                                         target: self,
                                                         action: nil)
     navigationItem.rightBarButtonItem?.tintColor = .grayColor
+    
+    willConfigure()
   }
   
   //MARK: - Functions
+  
+}
+
+extension MyViewController {
+  private func willConfigure() {
+    view.addSubview(myBikeImage)
+    
+    myBikeImage.snp.makeConstraints {
+      $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(15)
+      $0.leading.equalToSuperview().inset(15)
+      $0.width.height.equalTo(100)
+    }
+    
+    myBikeImage.settingMyImage(imageString: nil)
+  }
 }
