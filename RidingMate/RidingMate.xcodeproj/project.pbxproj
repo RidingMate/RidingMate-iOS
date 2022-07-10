@@ -22,6 +22,8 @@
 		0EB01E38285480D500E20DCA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E37285480D500E20DCA /* RxCocoa */; };
 		0EB01E3A285480D600E20DCA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E39285480D500E20DCA /* RxRelay */; };
 		0EB01E3C285480D600E20DCA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB01E3B285480D600E20DCA /* RxSwift */; };
+		0F09047F287ACDAB003514B0 /* HasNoBikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09047E287ACDAB003514B0 /* HasNoBikeView.swift */; };
+		0F090482287AD12E003514B0 /* RegisterBikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F090481287AD12E003514B0 /* RegisterBikeButton.swift */; };
 		0F91FC8A2858E1CE00AA51CE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC892858E1CE00AA51CE /* UIColor.swift */; };
 		0F91FC8C2858E2E900AA51CE /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC8B2858E2E900AA51CE /* UIFont.swift */; };
 		0F91FC8F2858E42A00AA51CE /* SplashLogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91FC8E2858E42A00AA51CE /* SplashLogoImageView.swift */; };
@@ -67,6 +69,8 @@
 		0E8356D32854A65400BBF06A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0E8356D62854A66700BBF06A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		0E8356D92854A67900BBF06A /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		0F09047E287ACDAB003514B0 /* HasNoBikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasNoBikeView.swift; sourceTree = "<group>"; };
+		0F090481287AD12E003514B0 /* RegisterBikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeButton.swift; sourceTree = "<group>"; };
 		0F91FC892858E1CE00AA51CE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0F91FC8B2858E2E900AA51CE /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		0F91FC8E2858E42A00AA51CE /* SplashLogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLogoImageView.swift; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 		0F09047C287AC435003514B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F09047E287ACDAB003514B0 /* HasNoBikeView.swift */,
+				0F090481287AD12E003514B0 /* RegisterBikeButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +524,8 @@
 				0FED207F2871CF4C00010337 /* SocialButton.swift in Sources */,
 				0FE7E29D28547BC9008084E3 /* AppDelegate.swift in Sources */,
 				0E8356D42854A65400BBF06A /* RegisterViewController.swift in Sources */,
+				0F09047F287ACDAB003514B0 /* HasNoBikeView.swift in Sources */,
+				0F090482287AD12E003514B0 /* RegisterBikeButton.swift in Sources */,
 				0E8356DA2854A67900BBF06A /* MyViewController.swift in Sources */,
 				0FE7E29F28547BC9008084E3 /* SceneDelegate.swift in Sources */,
 				0E8356D12854A5BF00BBF06A /* BikeViewController.swift in Sources */,
