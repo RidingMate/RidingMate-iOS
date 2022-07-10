@@ -16,4 +16,6 @@ extension UIColor {
   static let blackColor = UIColor.rgb(red: 34, green: 34, blue: 34)
   static let whiteColor = UIColor.rgb(red: 255, green: 255, blue: 255)
   static let grayColor = UIColor.rgb(red: 153, green: 153, blue: 153)
+  static let lightGrayColor = UIColor.rgb(red: 221, green: 221, blue: 221)
+  static let backLightGrayColor = UIColor.rgb(red: 241, green: 241, blue: 241)
 }
