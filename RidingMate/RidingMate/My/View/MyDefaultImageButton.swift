@@ -14,7 +14,7 @@ class MyDefaultImageButton: UIButton {
   init() {
     super.init(frame: .zero)
     
-    backgroundColor = .lightGray
+    backgroundColor = .backLightGrayColor
     layer.cornerRadius = 10
     
   }
