@@ -5,18 +5,20 @@
 //  Created by ㅇ오ㅇ on 2022/06/11.
 //
 
-import Foundation
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
   
   //MARK: - Property
   
+  let hasNoBikeView = HasNoBikeView()
   
   //MARK: - LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
     setNavi()
+    configureUI()
   }
   
   //MARK: - Functions
@@ -32,5 +34,20 @@ class HomeViewController: UIViewController {
     let alarmButton = UIBarButtonItem(image: UIImage(systemName: "bell"), style: .plain, target: self, action: nil)
     alarmButton.tintColor = .grayColor
     navigationItem.rightBarButtonItem = alarmButton
+  }
+}
+
+extension HomeViewController {
+  
+  private func configureUI() {
+    [hasNoBikeView].forEach {
+      view.addSubview($0)
+    }
+    
+    hasNoBikeView.snp.makeConstraints {
+      $0.center.equalToSuperview()
+      $0.width.equalTo(168)
+      $0.height.equalTo(193)
+    }
   }
 }
