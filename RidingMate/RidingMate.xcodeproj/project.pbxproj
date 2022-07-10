@@ -138,7 +138,10 @@
 		0E8356CC2854988100BBF06A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0E8356CD2854A56700BBF06A /* HomeViewController.swift */,
+				0F09047D287AC437003514B0 /* Model */,
+				0F09047C287AC435003514B0 /* View */,
+				0F09047B287AC432003514B0 /* ViewModel */,
+				0F09047A287AC42E003514B0 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -173,6 +176,35 @@
 				0E8356D92854A67900BBF06A /* MyViewController.swift */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		0F09047A287AC42E003514B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E8356CD2854A56700BBF06A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F09047B287AC432003514B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0F09047C287AC435003514B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F09047D287AC437003514B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0F91FC882858E1B300AA51CE /* Extension */ = {

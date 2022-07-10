@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
   
   func moveToMain() {
-    window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+    window?.rootViewController = MainTabBarController()
     window?.backgroundColor = .white
     window?.makeKeyAndVisible()
   }

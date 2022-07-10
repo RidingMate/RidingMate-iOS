@@ -36,8 +36,8 @@ class SplashViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureUI()
-    viewModel.idToken = "" // 로그인 안되어있을때 뷰 테스트
-    //        viewModel.idToken = "12345" // 로그인 되어있을때 테스트 뷰 테스트
+//    viewModel.idToken = "" // 로그인 안되어있을때 뷰 테스트
+            viewModel.idToken = "12345" // 로그인 되어있을때 테스트 뷰 테스트
     bind()
   }
   
