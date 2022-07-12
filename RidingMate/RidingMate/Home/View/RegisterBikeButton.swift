@@ -50,14 +50,16 @@ class RegisterBikeButton : UIButton {
     
     buttonImageView.snp.makeConstraints {
       $0.top.equalToSuperview().offset(38)
+      $0.centerX.equalToSuperview()
       $0.width.equalTo(90)
       $0.height.equalTo(54)
-      $0.bottom.equalToSuperview().offset(73)
     }
     
     registerBikeLabel.snp.makeConstraints {
-      $0.bottom.equalTo(buttonImageView.snp.trailing).offset(5)
+      $0.top.equalTo(buttonImageView.snp.bottom).offset(5)
       $0.centerX.equalToSuperview()
+      $0.height.equalTo(14)
+      $0.bottom.equalToSuperview().offset(-52)
     }
   }
 }

@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "\b설정 버튼-1.svg",
+      "filename" : "MySelect.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "\b설정 버튼-3.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "\b설정 버튼-4.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

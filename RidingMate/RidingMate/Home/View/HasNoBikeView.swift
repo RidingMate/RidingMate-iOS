@@ -16,10 +16,11 @@ class HasNoBikeView : UIView {
     let label = UILabel()
     label.text = "등록된 바이크가 없어요:("
     label.font = UIFont.fontWithName(type: .bold, size: 15)
+    label.textColor = .blackColor
     return label
   }()
   
-//  let registerBikeButton = RegisterBikeButton()
+  let registerBikeButton = RegisterBikeButton()
   
   //MARK: - Init
   
@@ -34,19 +35,20 @@ class HasNoBikeView : UIView {
   
   //MARK: - Functions
   private func configureUI() {
-    [hasNoBikeLabel].forEach {
+    backgroundColor = .clear
+    
+    [hasNoBikeLabel, registerBikeButton].forEach {
       addSubview($0)
     }
     
     hasNoBikeLabel.snp.makeConstraints {
       $0.top.equalToSuperview()
+      $0.centerX.equalToSuperview()
     }
     
-//    registerBikeButton.snp.makeConstraints {
-//      $0.top.equalTo(hasNoBikeLabel.snp.bottom).offset(15)
-////      $0.leading.trailing.bottom.equalToSuperview()
-//      $0.width.equalTo(168)
-//      $0.height.equalTo(165)
-//    }
+    registerBikeButton.snp.makeConstraints {
+      $0.top.equalTo(hasNoBikeLabel.snp.bottom).offset(15)
+      $0.bottom.leading.trailing.equalToSuperview()
+    }
   }
 }
